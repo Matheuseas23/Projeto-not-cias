@@ -52,10 +52,9 @@ header nav.mobíle {
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.5rem;
-
     transition: 0.7s;
  }
-
+ 
  header nav.mobíle.abrir {
     right: 0;
  }
@@ -210,6 +209,35 @@ main {
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gunmetal);
+    }
+
+    @media(min-width: 1110px) {More actions
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.75rem;
+        }
+    
+        .primeira-secao {
+            grid-column: 1 / 3;
+        }
+    
+        header > button {
+            display: none;
+        }
+    
+        header .desktop {
+            display: flex;
+            gap: 2.5rem;
+        }
+    
+        header .desktop a{
+            font-size: 0.9375rem;
+            line-height: 1.625rem;
+            text-decoration: none;
+            color: var(--gunmetal);
+        }
     }
 
     header .desktop a:hover {
